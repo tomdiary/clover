@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "sy-ht";
+  font-display: swap;
+  src: url("//at.alicdn.com/t/webfont_ue1bpbke4.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/webfont_ue1bpbke4.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/webfont_ue1bpbke4.woff2") format("woff2"), url("//at.alicdn.com/t/webfont_ue1bpbke4.woff") format("woff"), url("//at.alicdn.com/t/webfont_ue1bpbke4.ttf") format("truetype"), url("//at.alicdn.com/t/webfont_ue1bpbke4.svg#NotoSansHans-DemiLight") format("svg");
+  /* iOS 4.1- */
+}
+
+/*# sourceMappingURL=base.css.map */

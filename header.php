@@ -19,5 +19,10 @@
 <body>
 <div class="clover" id="clover">
     <header class="clover-header">
-        
+        <section class="header-container">
+            <section class="header-left">
+            </section>
+            <section class="header-right">
+            </section>
+        </section>
     </header>

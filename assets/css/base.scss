@@ -1,0 +1,17 @@
+// 公共头部
+.clover-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--cv-haeder-hei);
+  box-shadow: 0 2px 12px 0 rgba(179, 179, 179, 0.1);
+
+  .header-container {
+    height: 100%;
+  }
+}
+
+.clover-main {
+  padding-top: var(--cv-haeder-hei);
+}

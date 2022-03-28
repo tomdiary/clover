@@ -1,3 +1,6 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \***************************************************************************************************************/
 @font-face {
   font-family: "sy-ht";
   font-display: swap;
@@ -26,4 +29,25 @@ li {
   list-style: none;
 }
 
-/*# sourceMappingURL=normalize.css.map */
+.clover-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--cv-haeder-hei);
+  box-shadow: 0 2px 12px 0 rgba(179, 179, 179, 0.1);
+}
+.clover-header .header-container {
+  height: 100%;
+}
+
+.clover-main {
+  padding-top: var(--cv-haeder-hei);
+}
+
+body {
+  background-color: red;
+}
+body div {
+  padding: 20px;
+}

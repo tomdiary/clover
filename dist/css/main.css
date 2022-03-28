@@ -44,10 +44,3 @@ li {
 .clover-main {
   padding-top: var(--cv-haeder-hei);
 }
-
-body {
-  background-color: red;
-}
-body div {
-  padding: 20px;
-}

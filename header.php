@@ -6,14 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?></title>
-    <style>
-        :root {
-            --cv-bgc: "#FBFBFB";
-            --cv-col: "#F6416C";
-            --cv-text-col: "#333";
-            --cv-haeder-hei: 60px;
-        }
-    </style>
+    <?php echo clover_base_var(); ?>
     <?php wp_head(); ?>
 </head>
 <body>

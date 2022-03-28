@@ -6,6 +6,8 @@
 import moment from 'moment'
 import '@sts/main.scss'
 
-console.log('哈哈哈')
-
 moment.locale('zh-cn')
+
+lightGallery(document.getElementById('lightgallery'), {
+  licenseKey: '0000-0000-000-0000'
+})

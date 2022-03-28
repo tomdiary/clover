@@ -1,13 +1,3 @@
 @import "./normalize.scss";
 @import "./base.scss";
-
-body {
-  background-color: red;
-
-  div {
-    padding: 20px;
-  }
-}
-
-.clover {
-}
+@import "./index.scss";

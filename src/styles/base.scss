@@ -5,6 +5,8 @@
   left: 0;
   right: 0;
   height: var(--cv-haeder-hei);
+  z-index: 2000;
+  background-color: #FFF;
   box-shadow: 0 2px 12px 0 rgba(179, 179, 179, 0.1);
 
   .header-container {

@@ -11,6 +11,7 @@ function clover_base_var() {
       --cv-col: '#F6416C';
       --cv-text-col: '#333';
       --cv-haeder-hei: 60px;
+      --cv-primary: '#E23E57';
     }
   </style>";
 }

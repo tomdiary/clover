@@ -14,6 +14,7 @@ define( 'CLOVER_VERSION', wp_get_theme()->get( 'Version' ) ); // 版本
  * @var array
  */
 $clover_includes = array(
+  '/core/main.php',
   '/inc/main.php'
 );
 

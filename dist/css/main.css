@@ -11180,3 +11180,27 @@ li {
 .clover-main {
   padding-top: var(--cv-haeder-hei);
 }
+.clover-main .section-wrapper {
+  padding: var(--cv-pad);
+}
+.clover-main .section-wrapper .posts-list {
+  width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
+  margin-right: var(--cv-pad);
+}
+.clover-main .section-wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: var(--cv-sidebar-wid);
+}
+
+.single-core .post-area .post-wrapper {
+  width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
+  margin-right: var(--cv-pad);
+}
+.single-core .post-area-flex {
+  display: flex;
+  justify-content: space-between;
+}

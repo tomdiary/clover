@@ -5,8 +5,7 @@
 ```bash
 ├─ core/                # 关键模块（小工具、侧边栏）
 ├─ inc/                 # 核心功能函数
-├─ parts/               # 模板部件
-├─ templates/           # 模板
+├─ templates-parts/     # 模板以及相关部件
 ├─ dist/                # 打包文件
 ├─ src/                 # 前端主目录
 │  ├─ styles/           # 样式

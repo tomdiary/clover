@@ -4,21 +4,19 @@
  * @link https://github.com/tomdiary
  */
 import 'bootstrap'
+// import script from '@scr'
 import moment from 'moment'
-import '@sts/main.scss'
+import storage from '@ut/cv.storage'
+import '@sty/main.scss'
+import './config'
 
 moment.locale('zh-cn')
 
-lightGallery(document.getElementById('lightgallery'), {
-  licenseKey: '0000-0000-000-0000'
-})
+window.cv = {
+  storage
+}
 
-/**
- * overlayscrollbars 配置
- * @link https://github.com/KingSora/OverlayScrollbars
- */
-document.addEventListener('DOMContentLoaded', () => {
-  OverlayScrollbars(document.querySelectorAll('body'), {
-    className: 'os-theme-minimal-dark'
-  })
-})
+// window.onload = async () => {
+//   const postList = await axios.get('/wp-json/wp/v2/posts?page=1')
+//   console.log(postList)
+// }

@@ -38,4 +38,47 @@
 
 .clover-main {
   padding-top: var(--cv-haeder-hei);
+
+  .section-wrapper {
+    padding: var(--cv-pad);
+    
+    .posts-list {
+      width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
+      margin-right: var(--cv-pad);
+
+      .posts-list-wrapper {
+
+        .post-item {
+
+          .post-item-link {}
+        }
+      }
+    }
+  }
+
+  .section-wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sidebar {
+  width: var(--cv-sidebar-wid);
+}
+
+// 帖子详情
+.single-core {
+  
+  .post-area {
+    
+    .post-wrapper {
+      width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
+      margin-right: var(--cv-pad);
+    }
+  }
+
+  .post-area-flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }

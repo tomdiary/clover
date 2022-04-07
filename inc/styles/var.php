@@ -7,11 +7,13 @@ defined('ABSPATH') || exit;
 function clover_base_var() {
   return "<style id='clover-base-var'>
     :root {
-      --cv-bgc: '#FBFBFB';
-      --cv-col: '#F6416C';
-      --cv-text-col: '#333';
+      --cv-bgc: #FBFBFB;
+      --cv-col: #F6416C;
+      --cv-pad: 12px;
+      --cv-sidebar-wid: 30%;
+      --cv-text-col: #333;
       --cv-haeder-hei: 60px;
-      --cv-primary: '#E23E57';
+      --cv-primary: #E23E57;
     }
   </style>";
 }

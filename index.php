@@ -1,7 +1,8 @@
 <?php get_header(); ?>
   <section class="clover-main container">
-    <div class="alert alert-primary" role="alert">
-      A simple primary alert—check it out!
-    </div>
+    <section class="section-wrapper section-wrapper-flex">
+      <?php get_template_part( 'templates-parts/modules/posts-list' ); ?>
+      <?php get_sidebar(); ?>
+    </section>
   </section>
 <?php get_footer(); ?>

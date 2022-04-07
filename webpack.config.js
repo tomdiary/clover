@@ -25,9 +25,10 @@ module.exports = {
   resolve: {
     alias: {
       '@$': resolve('./src'),
-      '@ast': resolve('./src/assets'),
-      '@sts': resolve('./src/styles'),
-      '@util': resolve('./src/utils')
+      '@ass': resolve('./src/assets'),
+      '@sty': resolve('./src/styles'),
+      '@ut': resolve('./src/utils'),
+      '@scr': resolve('./src/script')
     }
   },
   plugins: [

@@ -2,7 +2,8 @@
 defined('ABSPATH') || exit;
 
 $clover_includes = array(
-  '/core/codestar-framework/codestar-framework.php'
+  '/core/codestar-framework/codestar-framework.php',
+  '/core/widgets/directory.php'
 );
 
 foreach ($clover_includes as $file) {

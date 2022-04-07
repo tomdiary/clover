@@ -2,7 +2,9 @@
 defined('ABSPATH') || exit;
 
 $clover_includes = array(
-  '/inc/styles/var.php'
+  '/inc/init.php',
+  '/inc/styles/var.php',
+  '/inc/posts/index.php'
 );
 
 foreach ($clover_includes as $file) {

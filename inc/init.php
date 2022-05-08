@@ -1,4 +1,5 @@
-<?php
+<?php defined('ABSPATH') || exit;
+
 /**
  * 注册特色图像
  */
@@ -27,10 +28,19 @@ function clover_sidebars() {
     'name'          => __('帖子详情侧边栏', 'clover'),
     'id'            => 'cv_posts_details_sidebar',
     'description'   => '三叶草帖子详情侧边栏',
-    'before_widget' => '<ul><li id="%1$s" class="clover-widget %2$s">',
-    'after_widget'  => '</li></ul>',
+    'before_widget' => '<aside id="%1$s" class="clover-widget %2$s">',
+    'after_widget'  => '</aside>',
     'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 }
 add_action('widgets_init', 'clover_sidebars');
+
+
+if (!function_exists('_clover')) {
+  function _clover($option = '', $default = null) {
+    $options_meta = CLOVER_OPTIONS;
+    $options = get_option($options_meta);
+    return (isset($options[$option])) ? $options[$option] : $default;
+  }
+}

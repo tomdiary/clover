@@ -1,13 +1,13 @@
-<?php
-defined('ABSPATH') || exit;
+<?php defined('ABSPATH') || exit;
 
 /**
  * 常量
  */
-define( 'CLOVER_DS', DIRECTORY_SEPARATOR ); // 路径（/）
-define( 'CLOVER_THEME_DIR', get_template_directory() ); // 文件目录（/usr/src/xxx）
-define( 'CLOVER_THEME_DIR_URI', get_template_directory_uri() ); // 文件目录（域名/wp-content/theme/主题）
-define( 'CLOVER_VERSION', wp_get_theme()->get( 'Version' ) ); // 版本
+define('CLOVER_DS', DIRECTORY_SEPARATOR); // 路径（/）
+define('CLOVER_THEME_DIR', get_template_directory()); // 文件目录（/usr/src/xxx）
+define('CLOVER_THEME_DIR_URI', get_template_directory_uri()); // 文件目录（域名/wp-content/theme/主题）
+define('CLOVER_VERSION', wp_get_theme()->get('Version')); // 版本
+define('CLOVER_OPTIONS', 'clover_options');
 
 /**
  * 加载依赖文件库

@@ -1,11 +1,36 @@
-<?php 
+<?php namespace CoreMain;
+
 defined('ABSPATH') || exit;
 
-$clover_includes = array(
-  '/core/codestar-framework/codestar-framework.php',
-  '/core/widgets/directory.php'
-);
+use CoreMain\MainOptions\{
+  CloverBasicCustomizeRegister,
+  CloverSeoCustomizeRegister,
+  CloverColorCustomizeRegister
+};
 
-foreach ($clover_includes as $file) {
-  require_once CLOVER_THEME_DIR . $file;
+class CloverCore {
+
+  public function __construct() {
+    $this->load_library();
+    $this->customize_api();
+    if (class_exists('CSF')) $this->codestar_framework();
+  }
+
+  public function load_library() {
+    require_once plugin_dir_path( __FILE__ ) . 'options/main-options.php';
+    require_once plugin_dir_path( __FILE__ ) . 'codestar-framework/codestar-framework.php';
+    require_once plugin_dir_path( __FILE__ ) . 'widgets/posts-list.php'; // 小工具 - 帖子列表
+  }
+
+  public function codestar_framework() {
+    require_once plugin_dir_path( __FILE__ ) . 'admin/basic-admin.php';
+  }
+
+  public function customize_api() {
+    new CloverBasicCustomizeRegister(); // 基本配置
+    new CloverSeoCustomizeRegister();   // seo配置
+    new CloverColorCustomizeRegister(); // 颜色配置
+  }
 }
+
+new CloverCore();

@@ -1,10 +1,9 @@
-<?php 
-defined('ABSPATH') || exit;
+<?php defined('ABSPATH') || exit;
 
 $clover_includes = array(
   '/inc/init.php',
-  '/inc/styles/var.php',
-  '/inc/posts/index.php'
+  '/inc/styles.php',
+  '/inc/posts.php'
 );
 
 foreach ($clover_includes as $file) {

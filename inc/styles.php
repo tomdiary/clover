@@ -1,5 +1,4 @@
-<?php
-defined('ABSPATH') || exit;
+<?php defined('ABSPATH') || exit;
 
 /**
  * 基础变量

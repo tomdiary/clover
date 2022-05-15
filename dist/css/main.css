@@ -11143,6 +11143,7 @@ body {
 a {
   color: var(--cv-text-col);
   text-decoration: none;
+  transition: var(--cv-transition);
 }
 
 li {
@@ -11194,31 +11195,40 @@ img {
   margin-right: var(--cv-pad);
 }
 .clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   background-color: #FFF;
   box-shadow: 0 2px 12px 0 rgba(179, 179, 179, 0.1);
   cursor: pointer;
 }
-.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .post-title {
-  padding: 18px;
-  text-align: center;
-  font-size: 20px;
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper {
+  display: flex;
+  align-items: center;
 }
-.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .post-logo {
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-left {
+  width: 360px;
+}
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-left .post-logo {
   width: 100%;
-  height: 274px;
+  height: 240px;
 }
-.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .post-logo img {
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-left .post-logo img {
   object-fit: cover;
 }
-.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .post-description {
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-right {
+  width: calc(100% - 320px);
+}
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-right .post-title {
+  padding: 20px;
+  font-size: 20px;
+}
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-right .post-description {
   padding: 18px;
   font-size: 16px;
   color: #6e6d76;
   line-height: 26px;
   letter-spacing: 0.2px;
 }
-.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .post-description p {
+.clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-right .post-description p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -11251,4 +11261,87 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.posts-pagination .nav-links {
+  display: flex;
+  align-items: center;
+}
+.posts-pagination .nav-links .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  font-size: 14px;
+}
+.posts-pagination .nav-links .page-numbers:hover {
+  cursor: pointer;
+  color: var(--cv-col);
+  border-color: var(--cv-col);
+}
+.posts-pagination .nav-links .current {
+  color: #FFF;
+  background-color: var(--cv-col);
+}
+.posts-pagination .nav-links .current:hover {
+  color: #FFF;
+}
+.posts-pagination .nav-links .next, .posts-pagination .nav-links .prev {
+  width: auto;
+  padding: 0 17px;
+  border: 2px solid #DFDFE2;
+}
+.posts-pagination .nav-links .next:hover, .posts-pagination .nav-links .prev:hover {
+  color: var(--cv-col);
+  border-color: var(--cv-col);
+}
+
+.clover-footer {
+  position: relative;
+  background-color: #121212;
+}
+.clover-footer a {
+  color: #4f4f4f;
+}
+.clover-footer a:hover {
+  color: #acacac;
+}
+.clover-footer .footer-container {
+  padding: 20px 0;
+}
+.clover-footer .friend-links {
+  margin-bottom: 20px;
+}
+.clover-footer .friend-links .friend-links-list {
+  display: flex;
+  justify-content: center;
+}
+.clover-footer .friend-links .friend-links-list .friend-links-item {
+  padding: 0 4px;
+  font-size: 15px;
+}
+.clover-footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #545454;
+}
+.clover-footer .copyright .line, .clover-footer .copyright a {
+  color: #545454;
+}
+.clover-footer .copyright .line {
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+@keyframes animate-colors {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 7000px 0;
+  }
 }

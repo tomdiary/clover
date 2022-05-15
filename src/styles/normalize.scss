@@ -23,6 +23,7 @@ body {
 a {
   color: var(--cv-text-col);
   text-decoration: none;
+  transition: $--cv-transition;
 }
 
 li {

@@ -13,6 +13,7 @@ function clover_base_var() {
       --cv-text-col: #333;
       --cv-haeder-hei: 60px;
       --cv-primary: #E23E57;
+      --cv-transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
   </style>";
 }

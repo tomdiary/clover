@@ -8,19 +8,26 @@
         ?>
         <article class="post-item">
           <section class="post-wrapper">
-            <h2 class="post-title">
-              <a
-                class="post-link"
-                href="<?php the_permalink() ?>"
-                title="<?php the_title() ?>">
-                <?php the_title() ?>
-              </a>
-            </h2>
-            <div class="post-logo">
-              <img src="<?php echo get_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title() ?>" />
+            <div class="area-left">
+              <div class="post-logo">
+                <img src="<?php echo get_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title() ?>" />
+              </div>
             </div>
-            <div class="post-description">
-              <p><?php echo clover_str_post_content(180, ''); ?></p>
+            <div class="area-right">
+              <h2 class="post-title">
+                <a
+                  class="post-link"
+                  href="<?php the_permalink() ?>"
+                  title="<?php the_title() ?>">
+                  <?php the_title() ?>
+                </a>
+              </h2>
+              <div class="post-description">
+                <p><?php echo clover_str_post_content(180, ''); ?></p>
+              </div>
+              <div class="post-meta">
+                2022-10-13 20:23:12
+              </div>
             </div>
           </section>
         </article>

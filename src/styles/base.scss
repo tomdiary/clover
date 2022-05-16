@@ -40,7 +40,7 @@
   padding-top: var(--cv-haeder-hei);
 
   .section-wrapper {
-    padding: var(--cv-pad);
+    padding: 30px 12px;
     
     .posts-list {
       width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
@@ -55,15 +55,17 @@
           cursor: pointer;
 
           .post-wrapper {
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 320px auto;
+            grid-template-rows: 200px;
+            padding: 20px;
 
             .area-left {
-              width: 360px;
+              margin: -20px;
+              margin-inline-end: 20px;
 
               .post-logo {
-                width: 100%;
-                height: 240px;
+                height: 100%;
 
                 img {
                   object-fit: cover;
@@ -72,10 +74,10 @@
             }
 
             .area-right {
-              width: calc(100% - 320px);
+              align-self: center;
 
               .post-title {
-                padding: 20px;
+                margin-bottom: 20px;
                 font-size: 20px;
 
                 .post-title-link {
@@ -83,7 +85,7 @@
               }
 
               .post-description {
-                padding: 18px;
+                margin-bottom: 20px;
                 font-size: 16px;
                 color: #6e6d76;
                 line-height: 26px;
@@ -96,6 +98,13 @@
                   -webkit-line-clamp: 3;
                   -webkit-box-orient: vertical;
                 }
+              }
+
+              .post-divider {
+                margin-left: -20px;
+                margin-right: -20px;
+                margin-bottom: 20px;
+                border-top: 1px solid rgba(224, 229, 235, 0.5);
               }
 
               .post-meta {
@@ -138,11 +147,14 @@
   }
 }
 
+// 分页
 .posts-pagination {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(224, 229, 235, 0.5);
 
   .nav-links {
     display: flex;

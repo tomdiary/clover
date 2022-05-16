@@ -25,6 +25,7 @@
               <div class="post-description">
                 <p><?php echo clover_str_post_content(180, ''); ?></p>
               </div>
+              <div class="post-divider"></div>
               <div class="post-meta">
                 2022-10-13 20:23:12
               </div>

@@ -6,7 +6,7 @@
 function clover_base_var() {
   return "<style id='clover-base-var'>
     :root {
-      --cv-bgc: #FBFBFB;
+      --cv-bgc: #FFFFFF;
       --cv-col: #F6416C;
       --cv-pad: 12px;
       --cv-sidebar-wid: 30%;

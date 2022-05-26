@@ -1,4 +1,9 @@
   <footer class="clover-footer">
+    <div class="footer-background">
+      <figure class="background" style="background: url('<?php echo CLOVER_THEME_DIR_URI . '/assets/images/0ff63a3006d8a2821be2.webp' ?>') repeat-x"></figure>
+      <figure class="background" style="background: url('<?php echo CLOVER_THEME_DIR_URI . '/assets/images/af2701cbb4196bedb254.webp' ?>') repeat-x"></figure>
+      <figure class="background" style="background: url('<?php echo CLOVER_THEME_DIR_URI . '/assets/images/30b4f3f93333bef2cf56.webp' ?>') repeat-x"></figure>
+    </div>
     <section class="footer-container container">
       <section class="friend-links">
         <ul class="friend-links-list">

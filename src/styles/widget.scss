@@ -1,3 +1,31 @@
 .clover-widget-posts-list {
-  
+}
+
+.clover-widget-tags-cloud {
+
+  .widget-title {
+  }
+
+  .tags-cloud-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag-cloud-link {
+      display: inline-flex;
+      align-items: center;
+      height: 36px;
+      margin: 8px 4px 0 4px;
+      padding: 0 12px;
+      line-height: 100%;
+      border-radius: 3px;
+      border: 1px solid #d7dee5;
+      transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),background-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+    .tag-cloud-link:hover {
+      color: #FFF;
+      border-color: var(--cv-col);
+      background-color: var(--cv-col);
+    }
+  }
 }

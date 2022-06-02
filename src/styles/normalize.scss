@@ -9,9 +9,13 @@
 //  url('//at.alicdn.com/t/webfont_ue1bpbke4.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
 //}
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, thead, tbody, tr, th, td, i, b, s, span, a {
+body, p, h1, h2, h3, h4, h5, h6, em, ol, ul, li, tr, th, td, dl, img, ins, sub, sup, big, cite, code, form, small, label, table, figure, button, legend, strike, address, caption, fieldset, blockquote {
   margin: 0;
   padding: 0;
+  border: none;
+  font-size: inherit;
+  text-align: inherit;
+  line-height: inherit;
 }
 
 body {
@@ -19,6 +23,10 @@ body {
   //font-family: 'sy-ht';
   background-color: var(--cv-bgc);
   overflow: hidden;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {

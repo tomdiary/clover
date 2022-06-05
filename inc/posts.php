@@ -26,6 +26,22 @@ function clover_get_posts_list($args = array('posts_per_page' => 10)) {
 }
 
 /**
+ * 标签云
+ */
+function clover_get_tags_cloud() {
+  $tag_cloud = wp_tag_cloud(
+    array(
+      'echo'     => true,
+      'number'   => 30,
+      'taxonomy' => 'post_tag',
+      'smallest' => 14,
+      'largest'  => 14,
+      'unit'     => 'px',
+    )
+  );
+}
+
+/**
  * 分页
  */
 if (!function_exists('clover_posts_pagination')) {

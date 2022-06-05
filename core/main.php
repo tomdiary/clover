@@ -20,6 +20,7 @@ class CloverCore {
     require_once plugin_dir_path( __FILE__ ) . 'options/main-options.php';
     require_once plugin_dir_path( __FILE__ ) . 'codestar-framework/codestar-framework.php';
     require_once plugin_dir_path( __FILE__ ) . 'widgets/posts-list.php'; // 小工具 - 帖子列表
+    require_once plugin_dir_path( __FILE__ ) . 'widgets/tags-cloud.php'; // 小工具 - 标签页
   }
 
   public function codestar_framework() {

@@ -8,7 +8,7 @@ class Clover_Posts_List extends WP_Widget {
       'customize_selective_refresh' => true
     );
 
-    parent::__construct('zeus_widget_tags', '三叶草-帖子列表', $widget_options);
+    parent::__construct('zeus_widget_post_list', '三叶草-帖子列表', $widget_options);
   }
 
   public function widget($args, $instance) {

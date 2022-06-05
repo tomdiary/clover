@@ -1,0 +1,100 @@
+.post-wrapper {
+
+  .page-title {
+    font-size: 36px;
+  }
+
+  h2 {
+    margin-top: 52px;
+    margin-bottom: 17px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    color: #6e6d76;
+
+    a {
+      color: var(--cv-primary);
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+
+    li {
+      list-style: inside;
+    }
+  }
+
+  ol {
+
+    li {
+      list-style: decimal;
+    }
+  }
+
+  .wp-block-code {
+    margin-top: 16px;
+    padding: 15px 20px;
+    background: #F4F4F5;
+
+    code {
+      padding: 0;
+      color: #6e6d76;
+      font-size: 16px;
+      line-height: 1.65;
+      background: transparent;
+    }
+  }
+}
+
+.wp-block-image {
+  margin-top: 24px;
+  padding: 15px 20px;
+}
+
+/* 表格 */
+.wp-block-table {
+
+  table {
+
+    tr {
+
+      th {
+      }
+
+      td {
+      }
+
+      td, th {
+        padding: 10px 16px;
+      }
+    }
+
+    thead {
+
+    }
+
+    tbody {
+
+    }
+
+    tfoot {
+
+    }
+  }
+
+  & > figcaption {
+    padding: 10px 16px;
+    text-align: center;
+  }
+}
+// 默认
+.is-style-regular {
+
+  table, th, td {
+    border: 1px solid #E0E0E0;
+  }
+}
+// 条纹
+.is-style-stripes {}

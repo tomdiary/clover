@@ -130,20 +130,78 @@
   width: var(--cv-sidebar-wid);
 }
 
-// 帖子详情
-.single-core {
-  
-  .post-area {
-    
-    .post-wrapper {
-      width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
-      margin-right: var(--cv-pad);
+// 帖子头部信息
+.post-header-info {
+  padding: 60px 40px 30px 40px;
+  background-color: #F9F5F0;
+
+  .header-info-wrapper {
+
+    .post-title {
+      margin-bottom: 10px;
+      font-size: 34px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .post-meta {
+      text-align: center;
+      font-weight: normal;
+      font-size: 14px;
+      color: #525252;
+
+      .meta-item {
+        position: relative;
+        display: inline-block;
+        padding: 0 18px;
+      }
+
+      .meta-item::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        height: 12px;
+        width: 0;
+        border-right: 1px solid #8a8a8a;
+        opacity: .59;
+      }
+
+      .meta-item:last-child::after {
+        display: none;
+      }
+
+      .meta-time {}
+
+      .meta-read {}
+
+      .meta-praise {}
+
+      .comment {}
     }
   }
+}
 
-  .post-area-flex {
-    display: flex;
-    justify-content: space-between;
+// 帖子详情
+.single-core {
+
+  .single-core-wrapper {
+    padding-top: 40px;
+
+    .post-area {
+
+      .post-wrapper {
+        width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
+        margin-right: var(--cv-pad);
+      }
+    }
+
+    .post-area-flex {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -202,7 +260,30 @@
 
 .clover-footer {
   position: relative;
-  background-color: #121212;
+  background-color: #FFF;
+
+  .footer-background {
+    position: relative;
+    height: 170px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 20px 30px -10px;
+
+    .background {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .background:nth-child(1) {
+    }
+
+    .background:nth-child(2) {
+    }
+
+    .background:nth-child(3) {
+    }
+  }
 
   a {
     color: #4f4f4f;

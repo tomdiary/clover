@@ -1,6 +1,7 @@
-@import "./variables.scss";
+@import "./variables";
 @import "~bootstrap/scss/bootstrap";
-@import "./normalize.scss";
-@import "./base.scss";
-@import "./index.scss";
-@import "./widget.scss";
+@import "./normalize";
+@import "./basic";
+@import "./common";
+@import "./posts";
+@import "./widget";

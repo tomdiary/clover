@@ -11633,7 +11633,7 @@ img {
 .single-core .single-core-wrapper {
   padding-top: 40px;
 }
-.single-core .single-core-wrapper .post-area .post-wrapper {
+.single-core .single-core-wrapper .post-area .post-core {
   width: calc(100% - var(--cv-sidebar-wid) - var(--cv-pad));
   margin-right: var(--cv-pad);
 }
@@ -11745,38 +11745,80 @@ img {
     background-position: 7000px 0;
   }
 }
-.post-wrapper .page-title {
+#post-core {
+  color: #525252;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 2;
+}
+#post-core .page-title {
   font-size: 36px;
 }
-.post-wrapper h2, .post-wrapper .h2 {
-  margin-top: 52px;
+#post-core h2, #post-core .h2 {
+  margin-top: 40px;
   margin-bottom: 17px;
+  font-size: 32px;
+  font-weight: 600;
 }
-.post-wrapper p {
+#post-core h3, #post-core .h3 {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  font-size: 26px;
+  font-weight: 600;
+}
+#post-core h4, #post-core .h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#post-core h5, #post-core .h5 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#post-core h6, #post-core .h6 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#post-core p {
   margin-bottom: 24px;
-  color: #6e6d76;
+  line-height: 2;
 }
-.post-wrapper p a {
+#post-core p a {
   color: var(--cv-primary);
   text-decoration: underline;
 }
-.post-wrapper ul li {
-  list-style: inside;
+#post-core ul, #post-core ol {
+  padding-left: 44px;
+  padding-bottom: 30px;
 }
-.post-wrapper ol li {
+#post-core ul li, #post-core ol li {
+  font-size: 16px;
+}
+#post-core ul li {
+  list-style: circle;
+}
+#post-core ol li {
   list-style: decimal;
 }
-.post-wrapper .wp-block-code {
+#post-core .wp-block-code {
   margin-top: 16px;
   padding: 15px 20px;
   background: #F4F4F5;
 }
-.post-wrapper .wp-block-code code {
+#post-core .wp-block-code code {
   padding: 0;
   color: #6e6d76;
   font-size: 16px;
   line-height: 1.65;
   background: transparent;
+}
+#post-core .wp-block-image figcaption {
+  text-align: center;
 }
 
 .wp-block-image {

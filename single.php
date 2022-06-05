@@ -14,7 +14,7 @@
   <section class="single-core">
     <div class="single-core-wrapper container">
       <section class="post-area post-area-flex">
-        <section class="post-wrapper">
+        <section class="post-core" id="post-core">
           <?php while(have_posts()): the_post(); ?>
             <?php the_content(); ?>
           <?php endwhile; ?>

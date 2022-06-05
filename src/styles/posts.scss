@@ -1,17 +1,51 @@
-.post-wrapper {
+#post-core {
+  color: #525252;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 2;
 
   .page-title {
     font-size: 36px;
   }
 
   h2 {
-    margin-top: 52px;
+    margin-top: 40px;
     margin-bottom: 17px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 14px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  h5 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  h6 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   p {
     margin-bottom: 24px;
-    color: #6e6d76;
+    line-height: 2;
 
     a {
       color: var(--cv-primary);
@@ -19,10 +53,19 @@
     }
   }
 
+  ul, ol {
+    padding-left: 44px;
+    padding-bottom: 30px;
+
+    li {
+      font-size: 16px;
+    }
+  }
+
   ul {
 
     li {
-      list-style: inside;
+      list-style: circle;
     }
   }
 
@@ -32,6 +75,8 @@
       list-style: decimal;
     }
   }
+
+  .wp-block-quote {}
 
   .wp-block-code {
     margin-top: 16px;
@@ -44,6 +89,13 @@
       font-size: 16px;
       line-height: 1.65;
       background: transparent;
+    }
+  }
+
+  .wp-block-image {
+
+    figcaption {
+      text-align: center;
     }
   }
 }

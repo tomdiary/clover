@@ -49,7 +49,12 @@
 
     a {
       color: var(--cv-primary);
-      text-decoration: underline;
+      //text-decoration: underline;
+      border-bottom: 1px solid #ffdfcc;
+    }
+
+    a:hover {
+      border-color: var(--cv-primary);
     }
   }
 
@@ -76,7 +81,10 @@
     }
   }
 
-  .wp-block-quote {}
+  .wp-block-quote {
+    padding-left: 30px;
+    border-left: 4px solid var(--cv-primary);
+  }
 
   .wp-block-code {
     margin-top: 16px;

@@ -11,17 +11,21 @@
       </h5>
     </div>
   </section>
-  <section class="single-core">
-    <div class="single-core-wrapper container">
-      <section class="post-area post-area-flex">
-        <section class="post-core" id="post-core">
-          <?php while(have_posts()): the_post(); ?>
-            <?php the_content(); ?>
-          <?php endwhile; ?>
-          <?php the_tags(); ?>
+  <section class="post-main">
+    <div class="post-core-wrapper container flex-layout">
+      <section class="post-area">
+        <section class="post-wrapper">
+          <article class="post-core" id="post-core">
+            <?php while(have_posts()): the_post(); ?>
+              <?php the_content(); ?>
+            <?php endwhile; ?>
+          </article>
+          <?php get_template_part( 'templates-parts/content/entry-tags' ); ?>
+          <?php previous_post_link('上一篇：%link'); ?>
+          <?php next_post_link('下一篇：%link'); ?>
         </section>
-        <?php get_sidebar(); ?>
       </section>
+      <?php get_sidebar(); ?>
     </div>
   </section>
 </section>

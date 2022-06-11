@@ -1,1 +1,1 @@
-<?php get_template_part( 'templates-parts/sidebar' ); ?>
+<?php get_template_part( 'templates-parts/sidebar' );

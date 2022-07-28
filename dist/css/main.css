@@ -11542,7 +11542,7 @@ img {
 .clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper {
   display: grid;
   grid-template-columns: 320px auto;
-  grid-template-rows: 200px;
+  grid-template-rows: auto;
   padding: 20px;
 }
 .clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-left {

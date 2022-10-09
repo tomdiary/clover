@@ -10,7 +10,7 @@
           <section class="post-wrapper">
             <div class="area-left">
               <div class="post-logo">
-                <img src="<?php echo get_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title() ?>" />
+                <img src="<?php echo get_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="<?php the_title() ?>" />
               </div>
             </div>
             <div class="area-right">

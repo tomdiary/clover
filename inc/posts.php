@@ -60,11 +60,11 @@ if (!function_exists('clover_posts_pagination')) {
 /**
  * 获取特色图像
  */
-function get_post_thumbnail_url($post_id){
+function get_post_thumbnail_url($post_id, $size = 'thumbnail'){
 	$post_id = $post_id === null ? get_the_ID() : $post_id;
 	$thumbnail_id = get_post_thumbnail_id($post_id);
 	if($thumbnail_id && $thumbnail_id !== 0){
-		$thumb = wp_get_attachment_image_src($thumbnail_id, 'full');
+		$thumb = wp_get_attachment_image_src($thumbnail_id, $size);
 		return $thumb[0];
 	}else{
 		return 'http://wtd.com/wp-content/uploads/2022/05/wallhaven-l3v3pq.jpg';

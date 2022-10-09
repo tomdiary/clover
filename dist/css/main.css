@@ -11554,6 +11554,7 @@ img {
 }
 .clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-left .post-logo img {
   object-fit: cover;
+  aspect-ratio: 16/9;
 }
 .clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-right {
   align-self: center;
@@ -11573,7 +11574,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 .clover-main .section-wrapper .posts-list .posts-list-wrapper .post-item .post-wrapper .area-right .post-divider {

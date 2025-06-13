@@ -1,0 +1,10 @@
+{
+  "CLOVER_NAME": "Clover Theme",
+  "CLOVER_VERSION": "0.1.0",
+  "CLOVER_AUTHOR": "TomDiary",
+  "CLOVER_HOME_URL": "https://github.com/tomdiary/clover",
+  "CLOVER_DEV_STATIC_DEV": "http://localhost/",
+  "CLOVER_DEV_STATIC_PORT": "5689",
+  "CLOVER_DEV_STATIC_DIR": "dist",
+  "CLOVER_PROD_STATIC_DIR": "dist"
+}

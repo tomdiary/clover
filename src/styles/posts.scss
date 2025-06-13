@@ -149,6 +149,7 @@
     text-align: center;
   }
 }
+
 // 默认
 .is-style-regular {
 
@@ -156,5 +157,28 @@
     border: 1px solid #E0E0E0;
   }
 }
+
 // 条纹
 .is-style-stripes {}
+
+// 文章目录
+.post-directory {
+  background-color: #CCCCCC;
+
+  .directory-title {}
+
+  & > ul {
+
+    & > li {
+      margin-left: 12px;
+      padding: 6px 0;
+
+      ul {
+
+        li {
+          padding: 6px 0 6px 24px;
+        }
+      }
+    }
+  }
+}

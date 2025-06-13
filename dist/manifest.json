@@ -1,0 +1,8 @@
+{
+  "main.css": "dist/css/main.c358b306d8d6a81271ec.css",
+  "main.js": "dist/main.ba741f82770b336708dc.bundle.js",
+  "vendors.js": "dist/vendors.b459fa9e737e3f1a27ff.bundle.js",
+  "main.css.map": "dist/css/main.c358b306d8d6a81271ec.css.map",
+  "main.bundle.js.map": "dist/main.ba741f82770b336708dc.bundle.js.map",
+  "vendors.bundle.js.map": "dist/vendors.b459fa9e737e3f1a27ff.bundle.js.map"
+}

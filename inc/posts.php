@@ -87,3 +87,93 @@ function clover_str_post_content($len = 100, $suffix = '...'){
     return $content = mb_substr($content, 0, $len) . $suffix;
   }
 }
+
+/**
+ * 增加代码高亮
+ * @param $content
+ */
+//function clover_content_code($content) {}
+//add_filter('the_content', 'clover_content_code');
+
+
+/**
+ * 文章目录
+ */
+//function clover_directory(): string
+//{
+//  // Retrieve the article content
+//  $article_content = get_the_content();
+//
+//  // Parse the headings
+//  $doc = new DOMDocument();
+//  $doc->loadHTML($article_content);
+//
+//  $xpath = new DOMXPath($doc);
+//  $headings = $xpath->query('//h2|//h3|//h4');
+//
+//  // Create the directory structure
+//  function create_directory($headings, $parent = null) {
+//    $result = '';
+//
+//    foreach ($headings as $heading) {
+//      $level = (int) substr($heading->tagName, 1);
+//
+//      // Check if the heading is a DOMElement
+//      if ($heading instanceof DOMElement) {
+//        // Create the directory item
+//        $item = '<li><a href="#'.$heading->getAttribute('id').'">'.$heading->textContent.'</a></li>';
+//
+//        if ($level == 2) {
+//          // Create a new directory section
+//          $result .= '<ul>'.$item.create_directory($heading->childNodes, $heading).'</ul>';
+//        } else if ($level > 2) {
+//          // Add the item to the current section
+//          $result .= $item;
+//        } else {
+//          // Add the item to the top-level section
+//          $result .= '<li>'.$item.'</li>';
+//        }
+//      }
+//    }
+//
+//    if (!empty($result)) {
+//      // Wrap the result in a parent section
+//      $result = '<ul>'.$result.'</ul>';
+//    }
+//
+//    return $result;
+//  }
+//
+//  $directory = create_directory($headings);
+//
+//  return $directory;
+//}
+
+function clover_directory() {
+  $content = get_the_content();
+  preg_match_all('/<h([2-6]).*?>(.*?)<\/h\1>/i', $content, $matches, PREG_SET_ORDER);
+
+  $toc = '';
+  $last_level = 0;
+
+  foreach ($matches as $match) {
+    $level = $match[1];
+    $title = $match[2];
+    $id = sanitize_title($title);
+
+    if ($level > $last_level) {
+      $toc .= '<ul>';
+    } elseif ($level < $last_level) {
+      $toc .= str_repeat('</ul></li>', $last_level - $level) . '</li>';
+    } else {
+      $toc .= '</li>';
+    }
+
+    $toc .= '<li><a href="#' . $id . '">' . $title . '</a>';
+    $last_level = $level;
+  }
+
+  $toc .= str_repeat('</ul></li>', $last_level - 1) . '</ul>';
+
+  return $toc;
+}

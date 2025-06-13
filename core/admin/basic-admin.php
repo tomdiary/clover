@@ -102,6 +102,18 @@ CSF::createSection($prefix, array(
       'subtitle'   => 'A textarea with shortcoder.',
       'shortcoder' => 'csf_demo_shortcodes',
     ),
+    array(
+      'id'          => 'sidebar-tags',
+      'type'        => 'select',
+      'title'       => '侧边栏标签',
+      'placeholder' => '请输入标签名',
+      'chosen'      => true,
+      'ajax'        => true,
+      'multiple'    => true,
+      'sortable'    => true,
+      'min_length'  => 2,
+      'options'     => 'tags',
+    ),
   )
 ));
 
@@ -253,4 +265,47 @@ CSF::createSection($prefix, array(
       )
     )
   )
+));
+
+/**
+ * 外部链接
+ */
+CSF::createSection($prefix, array(
+  'title'  => '外部链接',
+  'icon'   => 'fas fa-rocket',
+  'fields' => array(
+    array(
+      'type'    => 'notice',
+      'style'   => 'success',
+      'content' => '请在 <strong>rebots.txt</strong> 文件中，添加一条 <strong>Disallow: /?redirect=*</strong> 规则，这样就屏蔽了搜索引擎对中间页的抓取，对 SEO 会有很大的帮助。',
+    ),
+    array(
+      'id'      => 'is_link_redirect',
+      'type'    => 'switcher',
+      'title'   => '内部链接',
+      'label'   => '文章中外部链接转为内部链接并使用 redirect 进行跳转',
+      'default' => true,
+    ),
+    array(
+      'id'      => 'link_nofollow',
+      'type'    => 'switcher',
+      'title'   => 'Nofollow',
+      'label'   => '外部链接加上 nofollow',
+      'default' => true,
+    ),
+    array(
+      'id'       => 'redirect_key',
+      'type'     => 'text',
+      'title'    => '重定向KEY',
+      'subtitle' => '示例：www.w3.com/?redirect_to=xxxxxxx',
+      'default'  => 'redirect_to'
+    ),
+    array(
+      'id'          => 'exclude_link',
+      'type'        => 'textarea',
+      'title'       => '排除',
+      'subtitle'    => '以下链接将不会转换为内部链接',
+      'placeholder' => '请输入域名，例如：www.jd.com 或 jd.com，一行一个域名.',
+    ),
+  ),
 ));
